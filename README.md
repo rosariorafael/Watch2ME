@@ -28,7 +28,7 @@ Para fazer o deploy desse projeto rode
 
 ## Preview
 
-![App Screenshot](https://i.imgur.com/8K08wUG.gif)
+![App Screenshot](https://i.imgur.com/mIz6xag.gif)
 
 
 ## Contribuindo
