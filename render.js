@@ -26,16 +26,15 @@ const append = message => {
 }
 
 function appendData(roomName, roomCode){
-    append({name: "LocalHost", content: "LocalHost allows you to watch local videos with your friends synchronously while chatting.", pfp: "#f3dfbf"})
-    append({name: "LocalHost", content: `Welcome to ${roomName}`, pfp: "#f3dfbf"})
-    append({name: "LocalHost", content: `Share the room code (${roomCode}) with others to invite them to theHost.`, pfp: "#f3dfbf"})
-    append({name: "LocalHost", content: "They would need to have the same video file with them to join this watchHost.", pfp: "#f3dfbf"})
+    append({name: "LocalHost", content: "LocalHost permite que você assista a vídeos locais com seus amigos de forma síncrona enquanto conversa.", pfp: "#f3dfbf"})
+    append({name: "LocalHost", content: `Bem vindo a ${roomName}`, pfp: "#f3dfbf"})
+    append({name: "LocalHost", content: `Compartilhe o código (${roomCode}) com outras pessoas para convida-las.`, pfp: "#f3dfbf"})
 }
 
 document.getElementById('roomCodeText').addEventListener('click', ()=>{
     let text = document.getElementById('roomCodeText').innerHTML
     navigator.clipboard.writeText(text).then(()=>{
-        notyf.success("Copied to clipboard")
+        notyf.success("Copiado!")
     })
 })
 

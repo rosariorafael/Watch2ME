@@ -3,6 +3,21 @@
     src: URL('../fonts/AirbnbCerealBlack.ttf') format('truetype');
 }
 
+.wrapper {
+  position: fixed;
+  inset: 9;
+  z-index: 0000;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  transition: opacity .25s, visibility 1s;
+}
+
+.fade {
+  opacity: 0;
+  visibility: hidden;
+}
+
 body {
   background-color: #111316;
   color: white;
